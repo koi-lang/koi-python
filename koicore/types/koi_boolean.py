@@ -7,7 +7,7 @@ from koicore import KoiValue
 
 class KoiBoolean(KoiValue):
     def __init__(self, value: bool):
-        self.value = value
+        self._value = value
 
     def as_boolean(self):
-        return KoiBoolean(self.value)
+        return KoiBoolean(self._value)

@@ -4,7 +4,7 @@
 
 import abc
 
-from koicore.types import KoiBoolean
+from koicore.types import KoiBoolean, KoiCharacter
 
 
 class KoiObject(object):
@@ -12,4 +12,8 @@ class KoiObject(object):
 
     @abc.abstractmethod
     def as_boolean(self) -> KoiBoolean:
+        pass
+
+    @abc.abstractmethod
+    def as_character(self) -> KoiCharacter:
         pass
