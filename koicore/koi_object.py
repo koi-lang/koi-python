@@ -4,7 +4,7 @@
 
 import abc
 
-from koicore.types import KoiBoolean, KoiCharacter, KoiInteger
+from koicore.types import KoiBoolean, KoiCharacter, KoiInteger, KoiString
 
 
 class KoiObject(object):
@@ -12,12 +12,20 @@ class KoiObject(object):
 
     @abc.abstractmethod
     def as_boolean(self) -> KoiBoolean:
+        """Returns the object as if it were a boolean."""
         pass
 
     @abc.abstractmethod
     def as_character(self) -> KoiCharacter:
+        """Returns the object as if it were a character."""
         pass
 
     @abc.abstractmethod
     def as_integer(self) -> KoiInteger:
+        """Returns the object as if it were an integer."""
+        pass
+
+    @abc.abstractmethod
+    def as_string(self) -> KoiString:
+        """Returns the object as if it were a string."""
         pass

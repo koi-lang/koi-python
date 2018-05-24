@@ -5,7 +5,7 @@
 import abc
 
 from koicore import KoiObject
-from koicore.types import KoiBoolean, KoiCharacter, KoiInteger
+from koicore.types import KoiBoolean, KoiCharacter, KoiInteger, KoiString
 
 
 class KoiValue(KoiObject):
@@ -19,3 +19,6 @@ class KoiValue(KoiObject):
 
     def as_integer(self):
         return KoiInteger(0)
+
+    def as_string(self):
+        return KoiString(" ")
