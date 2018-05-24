@@ -4,3 +4,4 @@
 
 from .koi_boolean import KoiBoolean
 from .koi_character import KoiCharacter
+from .koi_integer import KoiInteger
