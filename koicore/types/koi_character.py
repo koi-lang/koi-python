@@ -7,6 +7,7 @@ from koicore import KoiValue
 
 class KoiCharacter(KoiValue):
     def __init__(self, value: str):
+        super().__init__()
         self._value = value[0]
 
     def as_character(self):

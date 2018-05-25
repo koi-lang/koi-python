@@ -10,6 +10,10 @@ from koicore.types import KoiBoolean, KoiCharacter, KoiInteger, KoiString
 class KoiObject(object):
     __metaclass__ = abc.ABCMeta
 
+    def __init__(self):
+        self._value = None
+        self._type = self
+
     @abc.abstractmethod
     def as_boolean(self) -> KoiBoolean:
         """Returns the object as if it were a boolean."""

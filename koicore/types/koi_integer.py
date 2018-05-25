@@ -7,6 +7,7 @@ from koicore import KoiValue
 
 class KoiInteger(KoiValue):
     def __init__(self, value: int):
+        super().__init__()
         self._value = value
 
     def as_integer(self):
