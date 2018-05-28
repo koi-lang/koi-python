@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """"""
 
-from koicore import KoiValue
+from koicore.koi_value import KoiValue
 
 
 class KoiInteger(KoiValue):
