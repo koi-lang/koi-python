@@ -3,7 +3,6 @@
 """"""
 
 from koicore.koi_object import KoiObject
-from koicore.types import KoiString, KoiBoolean
 
 
 class KoiInteger(KoiObject):
@@ -12,6 +11,7 @@ class KoiInteger(KoiObject):
         self.value = value
 
     def to_boolean(self):
+        from .koi_boolean import KoiBoolean
         if self.value == 0:
             return KoiBoolean(False)
 
@@ -25,4 +25,5 @@ class KoiInteger(KoiObject):
         return KoiInteger(self.value)
 
     def to_string(self):
+        from .koi_string import KoiString
         return KoiString(f"{self.value}")

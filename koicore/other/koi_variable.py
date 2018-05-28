@@ -6,10 +6,10 @@ from koicore import KoiObject
 
 
 class KoiVariable(KoiObject):
-    def __init__(self, value: KoiObject, type_: KoiObject):
+    def __init__(self, value: KoiObject):
         super().__init__()
         self.value = value
-        self.type_ = type_
+        self.type_ = type(self.value)
 
     def to_boolean(self):
         return self.value.to_boolean()
