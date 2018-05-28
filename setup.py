@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="koicore",
-      version="1.0.2",
+      version="1.0.3",
       description="The core library for Koi written in Python.",
       author="koi-lang",
       url="https://github.com/koi-lang/koi-python",

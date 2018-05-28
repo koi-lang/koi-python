@@ -2,13 +2,22 @@
 # -*- coding: utf-8 -*-
 """"""
 
-from koicore.koi_value import KoiValue
+from koicore.koi_object import KoiObject
 
 
-class KoiCharacter(KoiValue):
+class KoiCharacter(KoiObject):
     def __init__(self, value: str):
         super().__init__()
-        self._value = value[0]
+        self.value = value[0]
 
-    def as_character(self):
-        return KoiCharacter(self._value)
+    def to_boolean(self):
+        pass
+
+    def to_character(self):
+        return KoiCharacter(self.value)
+
+    def to_integer(self):
+        pass
+
+    def to_string(self):
+        pass

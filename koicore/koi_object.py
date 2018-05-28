@@ -12,21 +12,25 @@ class KoiObject(object):
         self._type = self
 
     @abc.abstractmethod
-    def as_boolean(self):  # -> KoiBoolean:
+    def to_boolean(self):  # -> KoiBoolean:
         """Returns the object as if it were a boolean."""
-        pass
+        from .types import KoiBoolean
+        return KoiBoolean(False)
 
     @abc.abstractmethod
-    def as_character(self):  # -> KoiCharacter:
+    def to_character(self):  # -> KoiCharacter:
         """Returns the object as if it were a character."""
-        pass
+        from .types import KoiCharacter
+        return KoiCharacter("")
 
     @abc.abstractmethod
-    def as_integer(self):  # -> KoiInteger:
+    def to_integer(self):  # -> KoiInteger:
         """Returns the object as if it were an integer."""
-        pass
+        from .types import KoiInteger
+        return KoiInteger(0)
 
     @abc.abstractmethod
-    def as_string(self):  # -> KoiString:
+    def to_string(self):  # -> KoiString:
         """Returns the object as if it were a string."""
-        pass
+        from .types import KoiString
+        return KoiString("")

@@ -6,19 +6,19 @@ from koicore import KoiObject
 
 
 class KoiVariable(KoiObject):
-    def __init__(self, value: KoiObject):
+    def __init__(self, value: KoiObject, type_: KoiObject):
         super().__init__()
-        self._value = value
-        self._type = type(value)
+        self.value = value
+        self.type_ = type_
 
-    def as_boolean(self):
-        return self._value.as_boolean()
+    def to_boolean(self):
+        return self.value.to_boolean()
 
-    def as_character(self):
-        return self._value.as_character()
+    def to_character(self):
+        return self.value.to_character()
 
-    def as_integer(self):
-        return self._value.as_integer()
+    def to_integer(self):
+        return self.value.to_integer()
 
-    def as_string(self):
-        return self._value.as_string()
+    def to_string(self):
+        return self.value.to_string()
