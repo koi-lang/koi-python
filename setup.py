@@ -14,4 +14,4 @@ setup(name="koicore",
           "Programming Language :: Python :: 3.6",
       ],
       keywords=["koi", "core", "language", "interpreter", "compiler"],
-      packages=["koicore", "koicore/other", "koicore/types"])
+      packages=["koicore", "koicore/other", "koicore/types", "koicore/enums"])
