@@ -3,3 +3,4 @@
 """"""
 
 from .koi_object import KoiObject
+from .koi_exception import KoiException
